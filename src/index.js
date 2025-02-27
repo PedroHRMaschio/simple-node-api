@@ -8,11 +8,11 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 
 app.get('/', (req, res) => {
-    res.send('Servidor Express está rodando!');
+    res.send('Express Server is up and running!');
 });
 
 app.listen(PORT, () => {
-    console.log(`Servidor rodando na porta ${PORT}`);
+    console.log(`Server on port ${PORT}`);
 });
 
 app.use('/api', routes);
